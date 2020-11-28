@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  {% block  titre%}
+  <title>Goove</title>
+  {% endblock titre %}
+{% block styles %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="{% static 'font-awesome-4.1.0/css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  {% endblock styles %}
+</head>
+
+<body>
+  
+ <div class="wrap">
+   <div class="container">
+    <div class="row justify-content-between">
+     <div class="col-12 col-md d-flex align-items-center">
+      <p class="mb-0 phone "><span class="mailus">Phone no:</span> <a></a>+242 068676562</a> or <span class="mailus">email us:</span> <a>levigoteni@gmail.com</a></p>
+    </div>
+    <div class="col-12 col-md d-flex justify-content-md-end">
+      <div class="social-media">
+        <p class="mb-0 d-flex">
+         <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+         <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+         <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+         <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+       </p>
+     </div>
+   
+    </div>
+</div>
+</div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+ <div class="container">
+   <a class="navbar-brand" href="#">Goove<span> Levi Goteni</span></a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="oi oi-menu"></span> Menu
+   </button>
+   <div class="collapse navbar-collapse" id="ftco-nav">
+     <ul class="navbar-nav ml-auto">
+       <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+       <li class="nav-item"><a href="ajouter" class="nav-link">Ajouter</a></li>
+    </ul>
+  </div>
+</div>
+</nav>
+<!-- END nav -->
+
+<section class="hero-wrap">
+  <div class="home-slider owl-carousel js-fullheight" style="background-image:url(static/img/drink-3.jpg);">
+    <div class="slider-item js-fullheight">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+          <div class="col-md-12 ftco-animate">
+            <div class="text w-100 mt-5 text-center">
+              <span class="subheading">Goove le bonheur d'etre chez soit</h2></span>
+              <h1>Manger sainement</h1>
+              <span class="subheading-2">2019</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-item js-fullheight" style="background-image:url(static/img/qw.jpg);">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+          <div class="col-md-12 ftco-animate">
+            <div class="text w-100 mt-5 text-center">
+              <span class="subheading">Goove Le bonheur d'etre chez soit</h2></span>
+              <h1>La sante n'a pas de prix</h1>
+              <span class="subheadineg-2 sub">Food</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% block content %}
+
+{% endblock content %}
+
+
+<footer class="ftco-footer ftco-no-pb ftco-section">
+<div class="container-fluid px-0 bg-primary py-3">
+ <div class="row no-gutters">
+  <div class="col-md-12 text-center">
+    <p class="mb-0">
+      Copyright &copy;<script>document.write(new Date().getFullYear());</script><i class="fa fa-heart" aria-hidden="true"></i><a target="_blank">Levi Goteni</a>
+    </p>
+    </div>
+  </div>
+</div>
+</footer>
+{% block javascript %}
+
+<script src=" {% static 'js/jquery.min.js' %} "></script>
+<script src=" {% static 'js/jquery-migrate-3.0.1.min.js' %} "></script>
+<script src=" {% static 'js/bootstrap.min.js' %} "></script>
+<script src=" {% static 'js/jquery.easing.1.3.js' %} "></script>
+<script src=" {% static 'js/jquery.waypoints.min.js' %} "></script>
+<script src=" {% static 'js/jquery.stellar.min.js' %} "></script>
+<script src=" {% static 'js/owl.carousel.min.js' %} "></script>
+<script src=" {% static 'js/jquery.animateNumber.min.js' %} "></script>
+<script src=" {% static 'js/scrollax.min.js' %} "></script>
+<script src=" {% static 'js/main.js' %} "></script>
+
+{% endblock javascript %}
+
+
+</body>
+</html>

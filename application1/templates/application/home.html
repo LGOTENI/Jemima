@@ -1,0 +1,30 @@
+{% extends "application/gabarit.html" %}
+
+{% block content %}
+
+
+<section class="ftco-section bg-light">
+    <div class="container">
+     <div class="row">
+{% for produit in data  %}
+       <div class="col-md-4 ftco-animate">
+         <div class="blog-entry">
+           <img src="{{ produit.image.url }}" height="80" alt=" Produit - {{ produit.nom }} alt="" class="block-20">
+           <div class="text px-4 pt-3 pb-4">
+             <div class="meta">
+               <div> <h1>{{ produit.nom }}</h1></div></br>
+               <div> Ajouter le {{ produit.date_creation }} </div>
+             </div>
+             <p class="clearfix">
+               <a href="/detail/{{ produit.pk }}" class="float-left read btn btn-primary">Details</a>
+               <a " class="float-right meta-chat"><span class="fa fa-comment"></span> 3</a>
+             </p>
+           </div>
+         </div>
+       </div>
+{% endfor %}
+     </div>
+   </div>
+   </section>
+
+{% endblock %}
